@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "jade": "^1.11.0",
+    "mysql": "^2.11.1",
     "node": "0.0.0",
     "routes": "^2.1.0"
   }
