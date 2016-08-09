@@ -1,3 +1,8 @@
+var express = require('express');
+var router = express.Router();
+
+var db = require('../server/db');
+
 var wrapper = {
 	home: function(req, res){
 		res.render('../views/index.jade');
@@ -9,7 +14,9 @@ var wrapper = {
 		res.render('../views/register.jade');
 	},
 	reg: function(req, res){
-		res.render('../views/reg.jade');
+		db.db.register(req.body);
+		console.log('U r registered');
+		res.render('../views/reg.jade');		
 	}
 };
 

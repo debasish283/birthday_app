@@ -1,3 +1,4 @@
+
 var db = {
     register: function(parameter) {
         var mysql = require('mysql');
