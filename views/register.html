@@ -7,16 +7,11 @@
     <link href="/css/styles.css" rel="stylesheet">
     <center>
         <h3>Registration Page</h3></center>
-    <script>
-    function myFunction() {
-        document.getElementById("myForm").reset();
-    }
-    </script>
 </head>
 
 <body>
     <center>
-        <form class="form-horizontal" action="/routes" method="post">
+        <form class="form-horizontal" action="/reg" method="post">
             <fieldset>
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="firstname">First Name</label>
@@ -74,11 +69,11 @@
                     <div></div>
                     <div class="col-md-2">
                         <button id="submit" name="submit" class="btn btn-primary">Submit</button>
-                        <button id="reset" name="reset" class="btn btn-danger" onclick="myFunction()>&nbspReset&nbsp</button>
-					</div>
-				</div>
-			</fieldset>
-		</form>
-		</center>
-	</body>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </center>
+</body>
+
 </html>
