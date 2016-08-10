@@ -1,3 +1,4 @@
+console.log('db.js');
 
 var db = {
     register: function(parameter) {

@@ -1,5 +1,7 @@
+console.log('wrapper');
+
 var express = require('express');
-var router = express.Router();
+//var router = express.Router();
 
 var db = require('../server/db');
 
@@ -12,12 +14,14 @@ var wrapper = {
 	},
 	register: function(req, res){
 		res.render('../views/register.jade');
+		
 	},
-	reg: function(req, res){
-		db.db.register(req.body);
-		console.log('U r registered');
-		res.render('../views/reg.jade');		
-	}
+	// reg: function(req, res){
+	// 	console.log('reg');
+	// 	db.db.register(req.body);
+	// 	console.log('U r registered');
+	// 	res.render('./views/reg.jade');		
+	// }
 };
 
 module.exports = wrapper;
